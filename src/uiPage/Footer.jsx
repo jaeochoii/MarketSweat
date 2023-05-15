@@ -10,6 +10,7 @@ const FootWrapper = styled.div`
   width: 390px;
   height: 90px;
   border: 3px solid #f6f2dd;
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;

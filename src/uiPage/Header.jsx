@@ -36,7 +36,7 @@ const Header = () => {
       <HeadLogo>
         Market
         <br />
-        Sweat
+        {"\u00A0"}Sweat
       </HeadLogo>
     </HeadWrapper>
   );
