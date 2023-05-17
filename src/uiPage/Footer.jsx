@@ -5,6 +5,7 @@ import Heart from "../assets/RiHeart3Line.png";
 import Menu from "../assets/RiMenuLine.png";
 import Search from "../assets/RiSearchLine.png";
 import User from "../assets/RiUserLine.png";
+import { useNavigate } from "react-router-dom";
 
 const FootWrapper = styled.div`
   width: 390px;
@@ -24,13 +25,22 @@ const ButtonWrapper = styled.img`
 `;
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const onClickHome = () => {
+    navigate("/MainPage");
+  };
+
+  const onClickUser = () => {
+    navigate("/LogInPage");
+  };
   return (
     <FootWrapper>
-      <ButtonWrapper src={Home} alt="" />
+      <ButtonWrapper src={Home} alt="" onClick={onClickHome} />
       <ButtonWrapper src={Heart} alt="" />
       <ButtonWrapper src={Menu} alt="" />
       <ButtonWrapper src={Search} alt="" />
-      <ButtonWrapper src={User} alt="" />
+      <ButtonWrapper src={User} alt="" onClick={onClickUser} />
     </FootWrapper>
   );
 };
