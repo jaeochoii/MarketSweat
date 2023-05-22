@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ShopLogo from "../assets/RiShoppingBasketLine.png";
 
 const HeadWrapper = styled.div`
-  width: 395px;
+  width: 390px;
   height: 90px;
   background-color: #f6f2dd;
 `;
@@ -15,7 +15,7 @@ const HeadLogo = styled.div`
   justify-content: center;
   align-items: center;
   font-family: "Mogra", cursive;
-  height: 18vh;
+  height: 15vh;
   font-size: 24px;
   line-height: 20px;
 `;

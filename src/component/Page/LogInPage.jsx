@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
+import { useNavigate } from "react-router-dom";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -78,6 +79,12 @@ const SignUpBut = styled.button`
   margin-left: 36px;
 `;
 const LogInPage = () => {
+  const navigate = useNavigate();
+
+  const onClickSignUp = () => {
+    navigate("/SignUpPage");
+  };
+
   return (
     <>
       <Header />
@@ -87,7 +94,7 @@ const LogInPage = () => {
         <InputPw type="password" placeholder="비밀번호를 입력해주세요" />
         <LoginBut>로그인</LoginBut>
         <FindIdPwWrap>아이디 찾기 | 비밀번호 찾기</FindIdPwWrap>
-        <SignUpBut>회원가입</SignUpBut>
+        <SignUpBut onClick={onClickSignUp}>회원가입</SignUpBut>
       </BodyContent>
       <Footer />
     </>
