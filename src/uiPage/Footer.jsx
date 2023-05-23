@@ -34,12 +34,17 @@ const Footer = () => {
   const onClickUser = () => {
     navigate("/LogInPage");
   };
+
+  const onClickSearch = () => {
+    navigate("/SearchPage");
+  };
+
   return (
     <FootWrapper>
       <ButtonWrapper src={Home} alt="" onClick={onClickHome} />
       <ButtonWrapper src={Heart} alt="" />
       <ButtonWrapper src={Menu} alt="" />
-      <ButtonWrapper src={Search} alt="" />
+      <ButtonWrapper src={Search} alt="" onClick={onClickSearch} />
       <ButtonWrapper src={User} alt="" onClick={onClickUser} />
     </FootWrapper>
   );
