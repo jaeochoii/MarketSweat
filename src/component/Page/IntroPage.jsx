@@ -9,7 +9,7 @@ const ImgWrapper = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   font-family: "Mogra", cursive;
   font-size: 4rem;
   line-height: 55px;

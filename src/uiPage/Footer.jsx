@@ -39,10 +39,14 @@ const Footer = () => {
     navigate("/SearchPage");
   };
 
+  const onClickHeart = () => {
+    navigate("/HeartPage");
+  };
+
   return (
     <FootWrapper>
       <ButtonWrapper src={Home} alt="" onClick={onClickHome} />
-      <ButtonWrapper src={Heart} alt="" />
+      <ButtonWrapper src={Heart} alt="" onClick={onClickHeart} />
       <ButtonWrapper src={Menu} alt="" />
       <ButtonWrapper src={Search} alt="" onClick={onClickSearch} />
       <ButtonWrapper src={User} alt="" onClick={onClickUser} />
