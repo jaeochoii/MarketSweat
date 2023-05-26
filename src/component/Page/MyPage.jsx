@@ -60,6 +60,10 @@ const MyPage = () => {
   const onClickLogOut = () => {
     navigate("/LogInPage");
   };
+
+  const onClickHeart = () => {
+    navigate("/HeartPage");
+  };
   return (
     <>
       <Header />
@@ -71,7 +75,7 @@ const MyPage = () => {
         </UserText>
         <UserText>안녕하세요?</UserText>
         <LoginBut>구매 내역</LoginBut>
-        <LoginBut>찜한 상품</LoginBut>
+        <LoginBut onClick={onClickHeart}>찜한 상품</LoginBut>
         <LoginBut>후기 작성</LoginBut>
         <LoginBut>관리자 페이지</LoginBut>
         <LoginBut onClick={onClickLogOut}>로그이웃</LoginBut>
