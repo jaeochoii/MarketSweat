@@ -15,7 +15,7 @@ const HeadLogo = styled.div`
   justify-content: center;
   align-items: center;
   font-family: "Mogra", cursive;
-  height: 15vh;
+  height: 16vh;
   font-size: 24px;
   line-height: 20px;
 `;
