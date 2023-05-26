@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Profile from "../../assets/profile.png";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
+import { useNavigate } from "react-router-dom";
+import LogInPage from "./LogInPage";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -39,7 +41,25 @@ const UserText = styled.div`
   text-align: center;
 `;
 
+const LoginBut = styled.button`
+  width: 325px;
+  height: 32px;
+  border: 1px solid black;
+  background-color: #f6f2dd;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-left: 36px;
+`;
+
 const MyPage = () => {
+  const navigate = useNavigate();
+
+  const onClickLogOut = () => {
+    navigate("/LogInPage");
+  };
   return (
     <>
       <Header />
@@ -50,6 +70,11 @@ const MyPage = () => {
           <span style={{ fontWeight: 700 }}>최재오</span>&nbsp;님
         </UserText>
         <UserText>안녕하세요?</UserText>
+        <LoginBut>구매 내역</LoginBut>
+        <LoginBut>찜한 상품</LoginBut>
+        <LoginBut>후기 작성</LoginBut>
+        <LoginBut>관리자 페이지</LoginBut>
+        <LoginBut onClick={onClickLogOut}>로그이웃</LoginBut>
       </BodyContent>
       <Footer />
     </>
