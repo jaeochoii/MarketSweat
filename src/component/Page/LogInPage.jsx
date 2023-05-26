@@ -85,6 +85,10 @@ const LogInPage = () => {
     navigate("/SignUpPage");
   };
 
+  const onClickMyPage = () => {
+    navigate("/MyPage");
+  };
+
   return (
     <>
       <Header />
@@ -92,7 +96,7 @@ const LogInPage = () => {
         <TextWrapper>LogIn</TextWrapper>
         <InputId placeholder="아이디를 입력해주세요" />
         <InputPw type="password" placeholder="비밀번호를 입력해주세요" />
-        <LoginBut>로그인</LoginBut>
+        <LoginBut onClick={onClickMyPage}>로그인</LoginBut>
         <FindIdPwWrap>아이디 찾기 | 비밀번호 찾기</FindIdPwWrap>
         <SignUpBut onClick={onClickSignUp}>회원가입</SignUpBut>
       </BodyContent>
