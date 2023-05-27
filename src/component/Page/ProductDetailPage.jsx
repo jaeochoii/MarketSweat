@@ -3,6 +3,9 @@ import styled from "styled-components";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
 import ProductImg from "../../assets/Product.png";
+import { AiFillHeart } from "react-icons/ai";
+import { AiOutlineHeart } from "react-icons/ai";
+import { useState } from "react";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -58,7 +61,25 @@ const ProductDetailText = styled.div`
   padding-left: 18px;
 `;
 
+const DivWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  margin-left: 18px;
+  margin-top: 18px;
+`;
+
 const ProductDetailPage = () => {
+  const [heart, setHeart] = useState(false);
+
+  const handleHeart = () => {
+    setHeart(!heart);
+  };
+
   return (
     <>
       <Header />
@@ -72,6 +93,13 @@ const ProductDetailPage = () => {
           <br />
           청수당 쉐프가 구운 팬케이크! 이제는 가정에서도 만날보세요~
         </ProductDetailText>
+        <DivWrap onClick={handleHeart}>
+          {heart ? (
+            <AiFillHeart style={{ color: "red", fontSize: "30px" }} />
+          ) : (
+            <AiOutlineHeart style={{ color: "red", fontSize: "30px" }} />
+          )}
+        </DivWrap>
       </BodyContent>
       <Footer />
     </>
