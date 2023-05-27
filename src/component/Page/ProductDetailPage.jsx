@@ -61,6 +61,12 @@ const ProductDetailText = styled.div`
   padding-left: 18px;
 `;
 
+const Wrapper = styled.div`
+  display: flex;
+  width: 100%;
+  height: 38px;
+`;
+
 const DivWrap = styled.div`
   display: flex;
   align-items: center;
@@ -71,6 +77,18 @@ const DivWrap = styled.div`
   border-radius: 5px;
   margin-left: 18px;
   margin-top: 18px;
+`;
+
+const PurchaseBut = styled.button`
+  width: 300px;
+  height: 34px;
+  border: 1px solid #f6f2dd;
+  background-color: #f6f2dd;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 16px;
 `;
 
 const ProductDetailPage = () => {
@@ -91,15 +109,18 @@ const ProductDetailPage = () => {
         <ProductDetailText>
           익선동, 연남동을 점령한 21세기 최고의 수제 팬케이크!
           <br />
-          청수당 쉐프가 구운 팬케이크! 이제는 가정에서도 만날보세요~
+          청수당 쉐프가 구운 팬케이크! 이제는 가정에서도 만나보세요~
         </ProductDetailText>
-        <DivWrap onClick={handleHeart}>
-          {heart ? (
-            <AiFillHeart style={{ color: "red", fontSize: "30px" }} />
-          ) : (
-            <AiOutlineHeart style={{ color: "red", fontSize: "30px" }} />
-          )}
-        </DivWrap>
+        <Wrapper>
+          <DivWrap onClick={handleHeart}>
+            {heart ? (
+              <AiFillHeart style={{ color: "red", fontSize: "30px" }} />
+            ) : (
+              <AiOutlineHeart style={{ color: "red", fontSize: "30px" }} />
+            )}
+          </DivWrap>
+          <PurchaseBut>구매하기</PurchaseBut>
+        </Wrapper>
       </BodyContent>
       <Footer />
     </>

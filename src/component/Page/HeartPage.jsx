@@ -48,11 +48,10 @@ const DivWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f6f2dd;
   width: 35px;
   height: 35px;
-  border: 2px solid black;
-  border-radius: 50px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
   margin-left: 310px;
   margin-top: 4px;
 `;
@@ -80,7 +79,7 @@ const PriceText = styled.div`
 `;
 
 const HeartPage = () => {
-  const [heart, setHeart] = useState(false);
+  const [heart, setHeart] = useState(true);
 
   const handleHeart = () => {
     setHeart(!heart);
@@ -98,7 +97,7 @@ const HeartPage = () => {
             {heart ? (
               <AiFillHeart style={{ color: "red", fontSize: "30px" }} />
             ) : (
-              <AiOutlineHeart style={{ fontSize: "30px" }} />
+              <AiOutlineHeart style={{ color: "red", fontSize: "30px" }} />
             )}
           </DivWrap>
         </ImgDiv>
