@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -38,10 +39,16 @@ const RecContent = styled.div`
 `;
 
 const Body = () => {
+  const navigate = useNavigate();
+
+  const onClickProduct = () => {
+    navigate("/ProductDetailPage");
+  };
+
   return (
     <BodyContent>
       <TextWrapper>스윗 행사 상품</TextWrapper>
-      <SaleWrapper />
+      <SaleWrapper onClick={onClickProduct} />
       <TextWrapper>스윗 추천 상품</TextWrapper>
       <RecWrapper>
         <RecContent />

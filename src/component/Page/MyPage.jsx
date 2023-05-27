@@ -4,7 +4,6 @@ import Profile from "../../assets/profile.png";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
 import { useNavigate } from "react-router-dom";
-import LogInPage from "./LogInPage";
 
 const BodyContent = styled.div`
   width: 390px;
