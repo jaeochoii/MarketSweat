@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import SaleProduct from "../assets/Product.png";
 import { useNavigate } from "react-router-dom";
 
 const BodyContent = styled.div`
@@ -13,14 +14,14 @@ const TextWrapper = styled.div`
   font-weight: 700;
   font-size: 15px;
   padding-top: 15px;
-  padding-left: 10px;
+  padding-left: 18px;
   padding-bottom: 5px;
 `;
 
-const SaleWrapper = styled.div`
-  width: 390px;
+const SaleWrapper = styled.img`
+  width: 358px;
   height: 215px;
-  border: 3px solid black;
+  padding-left: 18px;
 `;
 
 const RecWrapper = styled.div`
@@ -48,7 +49,7 @@ const Body = () => {
   return (
     <BodyContent>
       <TextWrapper>스윗 행사 상품</TextWrapper>
-      <SaleWrapper onClick={onClickProduct} />
+      <SaleWrapper onClick={onClickProduct} src={SaleProduct} />
       <TextWrapper>스윗 추천 상품</TextWrapper>
       <RecWrapper>
         <RecContent />
