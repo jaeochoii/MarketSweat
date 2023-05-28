@@ -35,6 +35,17 @@ const CategoryWrapper = styled.div`
   height: 40px;
   border-bottom: 1px solid #cecece;
   margin-left: 22px;
+  padding-top: 7px;
+`;
+
+const FoodWrapper = styled.img`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 5px;
 `;
 
 const MenuPage = () => {
@@ -43,16 +54,33 @@ const MenuPage = () => {
       <Header />
       <BodyContent>
         <TextWrapper>Category</TextWrapper>
-        <CategoryWrapper></CategoryWrapper>
-        <CategoryWrapper></CategoryWrapper>
-        <CategoryWrapper></CategoryWrapper>
-        <CategoryWrapper></CategoryWrapper>
-        <CategoryWrapper></CategoryWrapper>
-        <CategoryWrapper></CategoryWrapper>
-        <CategoryWrapper></CategoryWrapper>
-        <CategoryWrapper></CategoryWrapper>
-        <CategoryWrapper></CategoryWrapper>
-        <CategoryWrapper></CategoryWrapper>
+        <CategoryWrapper>
+          <FoodWrapper src={Coffee} />
+        </CategoryWrapper>
+        <CategoryWrapper>
+          <FoodWrapper src={Bakery} />
+        </CategoryWrapper>
+        <CategoryWrapper>
+          <FoodWrapper src={Macaron} />
+        </CategoryWrapper>
+        <CategoryWrapper>
+          <FoodWrapper src={Pestury} />
+        </CategoryWrapper>
+        <CategoryWrapper>
+          <FoodWrapper src={Cake} />
+        </CategoryWrapper>
+        <CategoryWrapper>
+          <FoodWrapper src={Bagle} />
+        </CategoryWrapper>
+        <CategoryWrapper>
+          <FoodWrapper src={Candy} />
+        </CategoryWrapper>
+        <CategoryWrapper>
+          <FoodWrapper src={Cookie} />
+        </CategoryWrapper>
+        <CategoryWrapper>
+          <FoodWrapper src={Sandwich} />
+        </CategoryWrapper>
       </BodyContent>
       <Footer />
     </>
