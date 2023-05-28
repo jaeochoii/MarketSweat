@@ -48,6 +48,19 @@ const FoodWrapper = styled.img`
   margin-left: 5px;
 `;
 
+const FoodText = styled.div`
+  display: flex;
+  @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap");
+  font-family: "Miriam Libre", sans-serif;
+  font-size: 20px;
+  width: 100px;
+  height: 25px;
+  justify-content: left;
+  align-items: center;
+  margin-left: 17px;
+  margin-top: 13px;
+`;
+
 const MenuPage = () => {
   return (
     <>
@@ -56,30 +69,39 @@ const MenuPage = () => {
         <TextWrapper>Category</TextWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Coffee} />
+          <FoodText>커피</FoodText>
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Bakery} />
+          <FoodText>베이커리</FoodText>
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Macaron} />
+          <FoodText>마카롱</FoodText>
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Pestury} />
+          <FoodText>패스츄리</FoodText>
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Cake} />
+          <FoodText>케이크</FoodText>
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Bagle} />
+          <FoodText>베이글</FoodText>
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Candy} />
+          <FoodText>캔디</FoodText>
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Cookie} />
+          <FoodText>쿠키</FoodText>
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Sandwich} />
+          <FoodText>샌드위치</FoodText>
         </CategoryWrapper>
       </BodyContent>
       <Footer />
