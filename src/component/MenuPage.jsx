@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../uiPage/Header";
 import Footer from "../uiPage/Footer";
-import { RiArrowDownSLine } from "react-icons/ri";
+import Arrow from "../assets/down-arrow.png";
 import Coffee from "../assets/coffee.png";
 import Bakery from "../assets/bakery.png";
 import Macaron from "../assets/macaron.png";
@@ -61,6 +61,16 @@ const FoodText = styled.div`
   margin-top: 13px;
 `;
 
+const ArrowWrap = styled.img`
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 18px;
+  height: 18px;
+  margin-left: 165px;
+  margin-top: 15px;
+`;
+
 const MenuPage = () => {
   return (
     <>
@@ -70,38 +80,47 @@ const MenuPage = () => {
         <CategoryWrapper>
           <FoodWrapper src={Coffee} />
           <FoodText>커피</FoodText>
+          <ArrowWrap src={Arrow} />
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Bakery} />
           <FoodText>베이커리</FoodText>
+          <ArrowWrap src={Arrow} />
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Macaron} />
           <FoodText>마카롱</FoodText>
+          <ArrowWrap src={Arrow} />
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Pestury} />
           <FoodText>패스츄리</FoodText>
+          <ArrowWrap src={Arrow} />
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Cake} />
           <FoodText>케이크</FoodText>
+          <ArrowWrap src={Arrow} />
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Bagle} />
           <FoodText>베이글</FoodText>
+          <ArrowWrap src={Arrow} />
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Candy} />
           <FoodText>캔디</FoodText>
+          <ArrowWrap src={Arrow} />
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Cookie} />
           <FoodText>쿠키</FoodText>
+          <ArrowWrap src={Arrow} />
         </CategoryWrapper>
         <CategoryWrapper>
           <FoodWrapper src={Sandwich} />
           <FoodText>샌드위치</FoodText>
+          <ArrowWrap src={Arrow} />
         </CategoryWrapper>
       </BodyContent>
       <Footer />
