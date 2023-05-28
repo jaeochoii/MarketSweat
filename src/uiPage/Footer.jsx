@@ -31,6 +31,10 @@ const Footer = () => {
     navigate("/MainPage");
   };
 
+  const onClickMenu = () => {
+    navigate("/MenuPage");
+  };
+
   const onClickUser = () => {
     navigate("/LogInPage");
   };
@@ -47,7 +51,7 @@ const Footer = () => {
     <FootWrapper>
       <ButtonWrapper src={Home} alt="" onClick={onClickHome} />
       <ButtonWrapper src={Heart} alt="" onClick={onClickHeart} />
-      <ButtonWrapper src={Menu} alt="" />
+      <ButtonWrapper src={Menu} alt="" onClick={onClickMenu} />
       <ButtonWrapper src={Search} alt="" onClick={onClickSearch} />
       <ButtonWrapper src={User} alt="" onClick={onClickUser} />
     </FootWrapper>

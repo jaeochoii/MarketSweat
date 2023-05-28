@@ -5,6 +5,7 @@ import SignUpPage from "./component/Page/SignUpPage";
 import SearchPage from "./component/Page/SearchPage";
 import HeartPage from "./component/Page/HeartPage";
 import MyPage from "./component/Page/MyPage";
+import MenuPage from "./component/MenuPage";
 import ProductDetailPage from "./component/Page/ProductDetailPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<IntroPage />} />
         <Route path="MainPage" element={<MainPage />} />
+        <Route path="MenuPage" element={<MenuPage />} />
         <Route path="MyPage" element={<MyPage />} />
         <Route path="LogInPage" element={<LogInPage />} />
         <Route path="SignUpPage" element={<SignUpPage />} />
