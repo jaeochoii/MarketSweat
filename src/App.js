@@ -7,6 +7,7 @@ import HeartPage from "./component/Page/HeartPage";
 import MyPage from "./component/Page/MyPage";
 import MenuPage from "./component/MenuPage";
 import ProductDetailPage from "./component/Page/ProductDetailPage";
+import PostPage from "./component/Page/PostPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="SearchPage" element={<SearchPage />} />
         <Route path="HeartPage" element={<HeartPage />} />
         <Route path="ProductDetailPage" element={<ProductDetailPage />} />
+        <Route path="PostPage" element={<PostPage />} />
       </Routes>
     </BrowserRouter>
   );

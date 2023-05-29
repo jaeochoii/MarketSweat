@@ -5,6 +5,7 @@ import Footer from "../../uiPage/Footer";
 import ProductImg from "../../assets/Product.png";
 import { AiFillHeart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const BodyContent = styled.div`
@@ -88,14 +89,34 @@ const PurchaseBut = styled.button`
   font-size: 15px;
   font-weight: 700;
   margin-top: 20px;
-  margin-left: 16px;
+  margin-left: 20px;
+`;
+
+const ReviewBut = styled.button`
+  @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap");
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: 700;
+  width: 60px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 75px;
+  background-color: #f6f2dd;
+  border: 0px solid #f6f2dd;
+  border-radius: 3px;
 `;
 
 const ProductDetailPage = () => {
+  const navigate = useNavigate();
   const [heart, setHeart] = useState(false);
 
   const handleHeart = () => {
     setHeart(!heart);
+  };
+
+  const onClickReview = () => {
+    navigate("/PostPage");
   };
 
   return (
@@ -104,7 +125,10 @@ const ProductDetailPage = () => {
       <BodyContent>
         <TextWrapper>Detail</TextWrapper>
         <ProductWrapper src={ProductImg} />
-        <ProductNameText>[청수당] 수플레 팬케이크 2 Set</ProductNameText>
+        <ProductNameText>
+          [청수당] 수플레 팬케이크 2 Set
+          <ReviewBut onClick={onClickReview}>Review</ReviewBut>
+        </ProductNameText>
         <ProductPriceText>8,400 원</ProductPriceText>
         <ProductDetailText>
           익선동, 연남동을 점령한 21세기 최고의 수제 팬케이크!
