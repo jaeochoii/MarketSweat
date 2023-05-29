@@ -47,6 +47,20 @@ const ContentText = styled.div`
   padding-top: 24px;
 `;
 
+const RecommendBut = styled.button`
+  width: 80px;
+  height: 30px;
+  margin-left: 300px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+`;
+
 const PostPage = () => {
   return (
     <>
@@ -56,19 +70,19 @@ const PostPage = () => {
         <ReviewWrapper>
           <ProductText>[청수당] 수플레 팬케이크 2set</ProductText>
           <ContentText>맛있게 잘먹었습니다.</ContentText>
+          <RecommendBut>도움돼요</RecommendBut>
+        </ReviewWrapper>
+        <ReviewWrapper>
+          <ProductText>[청수당] 수플레 팬케이크 2set</ProductText>
+          <ContentText>배송이 너무 빨라요</ContentText>
+          <RecommendBut>도움돼요</RecommendBut>
         </ReviewWrapper>
         <ReviewWrapper>
           <ProductText>[청수당] 수플레 팬케이크 2set</ProductText>
           <ContentText>
-            배송이 너무 빨라서~~~ <br />
-            맛있게 잘먹었습니다 ㅎㅎ 또 구매할래요~
+            아이가 너무 맛있게 먹네요 ㅎㅎ 하나 더 구매했어용
           </ContentText>
-        </ReviewWrapper>
-        <ReviewWrapper>
-          <ProductText>[청수당] 수플레 팬케이크 2set</ProductText>
-          <ContentText>
-            아이가 너무 맛있게 먹네요~ 하나 더 구매했어용
-          </ContentText>
+          <RecommendBut>도움돼요</RecommendBut>
         </ReviewWrapper>
       </BodyContent>
       <Footer />
