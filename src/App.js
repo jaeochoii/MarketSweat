@@ -5,9 +5,10 @@ import SignUpPage from "./component/Page/SignUpPage";
 import SearchPage from "./component/Page/SearchPage";
 import HeartPage from "./component/Page/HeartPage";
 import MyPage from "./component/Page/MyPage";
-import MenuPage from "./component/MenuPage";
+import MenuPage from "./component/Page/MenuPage";
 import ProductDetailPage from "./component/Page/ProductDetailPage";
 import PostPage from "./component/Page/PostPage";
+import ManagerPage from "./component/Page/ManagerPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="HeartPage" element={<HeartPage />} />
         <Route path="ProductDetailPage" element={<ProductDetailPage />} />
         <Route path="PostPage" element={<PostPage />} />
+        <Route path="ManagerPage" element={<ManagerPage />} />
       </Routes>
     </BrowserRouter>
   );
