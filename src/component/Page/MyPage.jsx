@@ -63,6 +63,11 @@ const MyPage = () => {
   const onClickHeart = () => {
     navigate("/HeartPage");
   };
+
+  const onClickManage = () => {
+    navigate("/ManagerPage");
+  };
+
   return (
     <>
       <Header />
@@ -76,7 +81,7 @@ const MyPage = () => {
         <LoginBut>구매 내역</LoginBut>
         <LoginBut onClick={onClickHeart}>찜한 상품</LoginBut>
         <LoginBut>후기 작성</LoginBut>
-        <LoginBut>관리자 페이지</LoginBut>
+        <LoginBut onClick={onClickManage}>관리자 페이지</LoginBut>
         <LoginBut onClick={onClickLogOut}>로그이웃</LoginBut>
       </BodyContent>
       <Footer />
