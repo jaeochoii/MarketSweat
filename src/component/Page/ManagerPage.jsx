@@ -28,6 +28,30 @@ const ProfileWrapper = styled.img`
   height: 80px;
 `;
 
+const UserText = styled.div`
+  width: 100%;
+  height: 10px;
+  font-size: 20px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`;
+
+const EnterBut = styled.button`
+  width: 325px;
+  height: 32px;
+  border: 1px solid black;
+  background-color: #f6f2dd;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 10px;
+  margin-top: 45px;
+  margin-left: 36px;
+`;
+
 const ManagerPage = () => {
   return (
     <>
@@ -35,6 +59,13 @@ const ManagerPage = () => {
       <BodyContent>
         <TextWrapper>Manage</TextWrapper>
         <ProfileWrapper src={Profile} />
+        <UserText>
+          <span style={{ fontWeight: 700 }}>최재오 매니저</span>&nbsp;님
+        </UserText>
+        <UserText>반갑습니다</UserText>
+        <EnterBut>회원 관리</EnterBut>
+        <EnterBut>제품 관리</EnterBut>
+        <EnterBut>게시글 관리</EnterBut>
       </BodyContent>
       <Footer />
     </>

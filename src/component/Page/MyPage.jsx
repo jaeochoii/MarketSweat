@@ -40,7 +40,7 @@ const UserText = styled.div`
   text-align: center;
 `;
 
-const LoginBut = styled.button`
+const EnterBut = styled.button`
   width: 325px;
   height: 32px;
   border: 1px solid black;
@@ -78,11 +78,11 @@ const MyPage = () => {
           <span style={{ fontWeight: 700 }}>최재오</span>&nbsp;님
         </UserText>
         <UserText>안녕하세요?</UserText>
-        <LoginBut>구매 내역</LoginBut>
-        <LoginBut onClick={onClickHeart}>찜한 상품</LoginBut>
-        <LoginBut>후기 작성</LoginBut>
-        <LoginBut onClick={onClickManage}>관리자 페이지</LoginBut>
-        <LoginBut onClick={onClickLogOut}>로그이웃</LoginBut>
+        <EnterBut>구매 내역</EnterBut>
+        <EnterBut onClick={onClickHeart}>찜한 상품</EnterBut>
+        <EnterBut>후기 작성</EnterBut>
+        <EnterBut onClick={onClickManage}>관리자 페이지</EnterBut>
+        <EnterBut onClick={onClickLogOut}>로그이웃</EnterBut>
       </BodyContent>
       <Footer />
     </>
