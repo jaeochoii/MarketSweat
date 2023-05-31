@@ -25,12 +25,13 @@ const SaleWrapper = styled.img`
 `;
 
 const RecWrapper = styled.div`
-  width: 390px;
+  width: 358px;
   height: 135px;
   border: 3px solid black;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-left: 18px;
 `;
 
 const RecContent = styled.div`
