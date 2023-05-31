@@ -9,6 +9,7 @@ import MenuPage from "./component/Page/MenuPage";
 import ProductDetailPage from "./component/Page/ProductDetailPage";
 import PostPage from "./component/Page/PostPage";
 import ManagerPage from "./component/Page/ManagerPage";
+import UserManage from "./component/Page/UserManage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="ProductDetailPage" element={<ProductDetailPage />} />
         <Route path="PostPage" element={<PostPage />} />
         <Route path="ManagerPage" element={<ManagerPage />} />
+        <Route path="UserManage" element={<UserManage />} />
       </Routes>
     </BrowserRouter>
   );

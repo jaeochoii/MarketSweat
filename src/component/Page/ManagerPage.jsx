@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Profile from "../../assets/profile.png";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
+import { useNavigate } from "react-router-dom";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -53,6 +54,12 @@ const EnterBut = styled.button`
 `;
 
 const ManagerPage = () => {
+  const navigate = useNavigate();
+
+  const onClickUser = () => {
+    navigate("/UserManage");
+  };
+
   return (
     <>
       <Header />
@@ -63,7 +70,7 @@ const ManagerPage = () => {
           <span style={{ fontWeight: 700 }}>최재오 매니저</span>&nbsp;님
         </UserText>
         <UserText>반갑습니다</UserText>
-        <EnterBut>회원 관리</EnterBut>
+        <EnterBut onClick={onClickUser}>회원 관리</EnterBut>
         <EnterBut>제품 관리</EnterBut>
         <EnterBut>게시글 관리</EnterBut>
       </BodyContent>
