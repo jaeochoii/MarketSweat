@@ -45,7 +45,7 @@ const IdText = styled.div`
 `;
 
 const IdText2 = styled.div`
-  width: 50px;
+  width: 55px;
   height: 12px;
   font-size: 13px;
   padding-left: 10px;
@@ -59,16 +59,16 @@ const ProductManage = () => {
         <TextWrapper>Product Manage</TextWrapper>
         <UserState>
           <UserText>
-            <IdText>아이디</IdText>
-            <IdText>이름</IdText>
-            <IdText>비밀번호</IdText>
-            <IdText>상태</IdText>
+            <IdText>제품번호</IdText>
+            <IdText>제품명</IdText>
+            <IdText>가격</IdText>
+            <IdText>수량</IdText>
           </UserText>
           <UserText>
-            <IdText2>inha2023</IdText2>
-            <IdText2>최재오</IdText2>
-            <IdText2>internet23!</IdText2>
-            <IdText2>관리자</IdText2>
+            <IdText2>00000000</IdText2>
+            <IdText2>[청수당]...</IdText2>
+            <IdText2>8400원</IdText2>
+            <IdText2>001개</IdText2>
           </UserText>
           <UserText></UserText>
           <UserText></UserText>
