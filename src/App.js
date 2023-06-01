@@ -11,6 +11,7 @@ import PostPage from "./component/Page/PostPage";
 import ManagerPage from "./component/Page/ManagerPage";
 import UserManage from "./component/Page/UserManage";
 import ProductManage from "./component/Page/ProductManage";
+import PostManage from "./component/Page/PostManage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="ManagerPage" element={<ManagerPage />} />
         <Route path="UserManage" element={<UserManage />} />
         <Route path="ProductManage" element={<ProductManage />} />
+        <Route path="PostManage" element={<PostManage />} />
       </Routes>
     </BrowserRouter>
   );

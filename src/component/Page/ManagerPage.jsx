@@ -64,6 +64,10 @@ const ManagerPage = () => {
     navigate("/ProductManage");
   };
 
+  const onClickPost = () => {
+    navigate("/PostManage");
+  };
+
   return (
     <>
       <Header />
@@ -76,7 +80,7 @@ const ManagerPage = () => {
         <UserText>반갑습니다</UserText>
         <EnterBut onClick={onClickUser}>회원 관리</EnterBut>
         <EnterBut onClick={onClickProduct}>제품 관리</EnterBut>
-        <EnterBut>게시글 관리</EnterBut>
+        <EnterBut onClick={onClickPost}>게시글 관리</EnterBut>
       </BodyContent>
       <Footer />
     </>
