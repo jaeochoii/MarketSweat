@@ -56,19 +56,19 @@ const PostManage = () => {
     <>
       <Header />
       <BodyContent>
-        <TextWrapper>Product Manage</TextWrapper>
+        <TextWrapper>Post Manage</TextWrapper>
         <UserState>
           <UserText>
-            <IdText>제품번호</IdText>
-            <IdText>제품명</IdText>
-            <IdText>가격</IdText>
-            <IdText>수량</IdText>
+            <IdText>Post No</IdText>
+            <IdText>&nbsp;내용</IdText>
+            <IdText>작성자</IdText>
+            <IdText>&nbsp;날짜</IdText>
           </UserText>
           <UserText>
-            <IdText2>00000000</IdText2>
-            <IdText2>[청수당]...</IdText2>
-            <IdText2>8400원</IdText2>
-            <IdText2>001개</IdText2>
+            <IdText2>00000001</IdText2>
+            <IdText2>&nbsp;너무 맛...</IdText2>
+            <IdText2>&nbsp;&nbsp;최재오</IdText2>
+            <IdText2>23.06.11</IdText2>
           </UserText>
           <UserText></UserText>
           <UserText></UserText>
