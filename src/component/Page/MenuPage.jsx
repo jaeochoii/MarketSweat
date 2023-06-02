@@ -123,7 +123,7 @@ const MenuPage = () => {
           <ArrowWrap src={Arrow} />
         </CategoryWrapper>
       </BodyContent>
-      <Footer />
+      <Footer name="menu" />
     </>
   );
 };

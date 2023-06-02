@@ -23,45 +23,81 @@ const ButtonWrapper = styled.div`
   display: flex;
   width: 30px;
   height: 30px;
+  margin-top: -20px;
 `;
 
-const Footer = () => {
+const Footer = (props) => {
   const navigate = useNavigate();
 
-  const [click, setClick] = useState("home");
-
-  const onClickHome = () => {
-    navigate("/MainPage");
-    setClick("home");
-  };
-
-  const onClickMenu = () => {
-    navigate("/MenuPage");
-    setClick("menu");
-  };
-
-  const onClickUser = () => {
-    navigate("/LogInPage");
-    setClick("user");
-  };
-
-  const onClickSearch = () => {
-    navigate("/SearchPage");
-    setClick("search");
-  };
-
-  const onClickHeart = () => {
-    navigate("/HeartPage");
-    setClick("heart");
-  };
+  const [click, setClick] = useState(props.name);
 
   return (
     <FootWrapper>
-      <ButtonWrapper onClick={onClickHome}></ButtonWrapper>
-      <ButtonWrapper onClick={onClickHeart}></ButtonWrapper>
-      <ButtonWrapper onClick={onClickMenu}></ButtonWrapper>
-      <ButtonWrapper onClick={onClickSearch}></ButtonWrapper>
-      <ButtonWrapper onClick={onClickUser}></ButtonWrapper>
+      <ButtonWrapper
+        name="home"
+        onClick={() => {
+          setClick(props.name);
+          navigate("/MainPage");
+        }}
+      >
+        {click === "home" ? (
+          <HiOutlineHome style={{ color: "#D8CB93", fontSize: "30px" }} />
+        ) : (
+          <HiOutlineHome style={{ color: "black", fontSize: "30px" }} />
+        )}
+      </ButtonWrapper>
+      <ButtonWrapper
+        name="heart"
+        onClick={() => {
+          setClick(props.name);
+          navigate("/HeartPage");
+        }}
+      >
+        {click === "heart" ? (
+          <HiOutlineHeart style={{ color: "red", fontSize: "30px" }} />
+        ) : (
+          <HiOutlineHeart style={{ color: "black", fontSize: "30px" }} />
+        )}
+      </ButtonWrapper>
+      <ButtonWrapper
+        name="menu"
+        onClick={() => {
+          setClick(props.name);
+          navigate("/MenuPage");
+        }}
+      >
+        {click === "menu" ? (
+          <HiOutlineMenu style={{ color: "#D8CB93", fontSize: "30px" }} />
+        ) : (
+          <HiOutlineMenu style={{ color: "black", fontSize: "30px" }} />
+        )}
+      </ButtonWrapper>
+      <ButtonWrapper
+        name="search"
+        onClick={() => {
+          setClick(props.name);
+          navigate("/SearchPage");
+        }}
+      >
+        {click === "search" ? (
+          <HiOutlineSearch style={{ color: "D8CB93", fontSize: "30px" }} />
+        ) : (
+          <HiOutlineSearch style={{ color: "black", fontSize: "30px" }} />
+        )}
+      </ButtonWrapper>
+      <ButtonWrapper
+        name="user"
+        onClick={() => {
+          setClick(props.user);
+          navigate("/LogInPage");
+        }}
+      >
+        {click === "user" ? (
+          <HiOutlineUser style={{ color: "D8CB93", fontSize: "30px" }} />
+        ) : (
+          <HiOutlineUser style={{ color: "black", fontSize: "30px" }} />
+        )}
+      </ButtonWrapper>
     </FootWrapper>
   );
 };

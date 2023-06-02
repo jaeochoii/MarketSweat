@@ -8,7 +8,7 @@ const MainPage = () => {
     <>
       <Header />
       <Body />
-      <Footer />
+      <Footer name="home" />
     </>
   );
 };

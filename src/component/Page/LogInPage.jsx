@@ -100,7 +100,7 @@ const LogInPage = () => {
         <FindIdPwWrap>아이디 찾기 | 비밀번호 찾기</FindIdPwWrap>
         <SignUpBut onClick={onClickSignUp}>회원가입</SignUpBut>
       </BodyContent>
-      <Footer />
+      <Footer name="user" />
     </>
   );
 };

@@ -71,7 +71,7 @@ const SearchPage = () => {
         <PopularBox>6. 랜디스 도넛</PopularBox>
         <PopularBox>7. 다운타우너 버거</PopularBox>
       </BodyContent>
-      <Footer />
+      <Footer name="search" />
     </>
   );
 };

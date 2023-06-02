@@ -106,7 +106,7 @@ const HeartPage = () => {
           <PriceText>13900 Won</PriceText>
         </InformBox>
       </BodyContent>
-      <Footer />
+      <Footer name="heart" />
     </>
   );
 };
