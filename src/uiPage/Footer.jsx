@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import Home from "../assets/RiHome2Line.png";
-import Heart from "../assets/RiHeart3Line.png";
-import Menu from "../assets/RiMenuLine.png";
-import Search from "../assets/RiSearchLine.png";
-import User from "../assets/RiUserLine.png";
+import AHome from "../assets/RiHome2Line.png";
+import BHome from "../assets/react-icons/ri/RiHome2Line.png";
+import AHeart from "../assets/react-icons/ri/RiHeart3Line.png";
+import BHeart from "../assets/RiHeart3Line.png";
+import AMenu from "../assets/react-icons/ri/RiMenuLine.png";
+import BMenu from "../assets/RiMenuLine.png";
+import ASearch from "../assets/react-icons/ri/RiSearchLine.png";
+import BSearch from "../assets/RiSearchLine.png";
+import AUser from "../assets/react-icons/ri/RiUserLine.png";
+import BUser from "../assets/RiUserLine.png";
 import { useNavigate } from "react-router-dom";
 
 const FootWrapper = styled.div`
@@ -49,11 +54,11 @@ const Footer = () => {
 
   return (
     <FootWrapper>
-      <ButtonWrapper src={Home} alt="" onClick={onClickHome} />
-      <ButtonWrapper src={Heart} alt="" onClick={onClickHeart} />
-      <ButtonWrapper src={Menu} alt="" onClick={onClickMenu} />
-      <ButtonWrapper src={Search} alt="" onClick={onClickSearch} />
-      <ButtonWrapper src={User} alt="" onClick={onClickUser} />
+      <ButtonWrapper src={AHome} alt="" onClick={onClickHome} />
+      <ButtonWrapper src={BHeart} alt="" onClick={onClickHeart} />
+      <ButtonWrapper src={BMenu} alt="" onClick={onClickMenu} />
+      <ButtonWrapper src={BSearch} alt="" onClick={onClickSearch} />
+      <ButtonWrapper src={BUser} alt="" onClick={onClickUser} />
     </FootWrapper>
   );
 };
