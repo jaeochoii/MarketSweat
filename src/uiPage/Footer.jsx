@@ -1,15 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import AHome from "../assets/RiHome2Line.png";
-import BHome from "../assets/react-icons/ri/RiHome2Line.png";
-import AHeart from "../assets/react-icons/ri/RiHeart3Line.png";
-import BHeart from "../assets/RiHeart3Line.png";
-import AMenu from "../assets/react-icons/ri/RiMenuLine.png";
-import BMenu from "../assets/RiMenuLine.png";
-import ASearch from "../assets/react-icons/ri/RiSearchLine.png";
-import BSearch from "../assets/RiSearchLine.png";
-import AUser from "../assets/react-icons/ri/RiUserLine.png";
-import BUser from "../assets/RiUserLine.png";
+import { HiOutlineHome } from "react-icons/hi";
+import { HiOutlineSearch } from "react-icons/hi";
+import { HiOutlineHeart } from "react-icons/hi";
+import { HiOutlineMenu } from "react-icons/hi";
+import { HiOutlineUser } from "react-icons/hi";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const FootWrapper = styled.div`
@@ -23,7 +19,7 @@ const FootWrapper = styled.div`
   flex-direction: row;
 `;
 
-const ButtonWrapper = styled.img`
+const ButtonWrapper = styled.div`
   display: flex;
   width: 30px;
   height: 30px;
@@ -32,33 +28,40 @@ const ButtonWrapper = styled.img`
 const Footer = () => {
   const navigate = useNavigate();
 
+  const [click, setClick] = useState("home");
+
   const onClickHome = () => {
     navigate("/MainPage");
+    setClick("home");
   };
 
   const onClickMenu = () => {
     navigate("/MenuPage");
+    setClick("menu");
   };
 
   const onClickUser = () => {
     navigate("/LogInPage");
+    setClick("user");
   };
 
   const onClickSearch = () => {
     navigate("/SearchPage");
+    setClick("search");
   };
 
   const onClickHeart = () => {
     navigate("/HeartPage");
+    setClick("heart");
   };
 
   return (
     <FootWrapper>
-      <ButtonWrapper src={AHome} alt="" onClick={onClickHome} />
-      <ButtonWrapper src={BHeart} alt="" onClick={onClickHeart} />
-      <ButtonWrapper src={BMenu} alt="" onClick={onClickMenu} />
-      <ButtonWrapper src={BSearch} alt="" onClick={onClickSearch} />
-      <ButtonWrapper src={BUser} alt="" onClick={onClickUser} />
+      <ButtonWrapper onClick={onClickHome}></ButtonWrapper>
+      <ButtonWrapper onClick={onClickHeart}></ButtonWrapper>
+      <ButtonWrapper onClick={onClickMenu}></ButtonWrapper>
+      <ButtonWrapper onClick={onClickSearch}></ButtonWrapper>
+      <ButtonWrapper onClick={onClickUser}></ButtonWrapper>
     </FootWrapper>
   );
 };
