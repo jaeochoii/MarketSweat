@@ -27,17 +27,17 @@ const SaleWrapper = styled.img`
 const RecWrapper = styled.div`
   width: 358px;
   height: 135px;
-  border: 3px solid black;
+  border: 3px solid none;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-left: 18px;
 `;
 
-const RecContent = styled.div`
-  width: 120px;
+const RecContent = styled.img`
+  width: 110px;
   height: 125px;
-  border: 1px solid blue;
+  border: 1px solid #d8cb93;
 `;
 
 const Body = () => {
@@ -50,10 +50,10 @@ const Body = () => {
   return (
     <BodyContent>
       <TextWrapper>스윗 행사 상품</TextWrapper>
-      <SaleWrapper onClick={onClickProduct} src={SaleProduct} />
+      <SaleWrapper src={SaleProduct} />
       <TextWrapper>스윗 추천 상품</TextWrapper>
       <RecWrapper>
-        <RecContent />
+        <RecContent src={SaleProduct} onClick={onClickProduct} />
         <RecContent />
         <RecContent />
       </RecWrapper>

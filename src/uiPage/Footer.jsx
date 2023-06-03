@@ -80,7 +80,7 @@ const Footer = (props) => {
         }}
       >
         {click === "search" ? (
-          <HiOutlineSearch style={{ color: "D8CB93", fontSize: "30px" }} />
+          <HiOutlineSearch style={{ color: "#D8CB93", fontSize: "30px" }} />
         ) : (
           <HiOutlineSearch style={{ color: "black", fontSize: "30px" }} />
         )}
@@ -93,7 +93,7 @@ const Footer = (props) => {
         }}
       >
         {click === "user" ? (
-          <HiOutlineUser style={{ color: "D8CB93", fontSize: "30px" }} />
+          <HiOutlineUser style={{ color: "#D8CB93", fontSize: "30px" }} />
         ) : (
           <HiOutlineUser style={{ color: "black", fontSize: "30px" }} />
         )}
