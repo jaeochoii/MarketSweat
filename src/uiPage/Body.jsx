@@ -41,6 +41,7 @@ const RecContent = styled.img`
   width: 110px;
   height: 125px;
   border: 1px solid #d8cb93;
+  border-radius: 2px;
 `;
 
 const Body = () => {
