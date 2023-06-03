@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import SaleProduct from "../assets/Product.png";
+import Macaron from "../assets/macarons.png";
+import Donuts from "../assets/LikedIMG.png";
 import { useNavigate } from "react-router-dom";
 
 const BodyContent = styled.div`
@@ -54,8 +56,8 @@ const Body = () => {
       <TextWrapper>스윗 추천 상품</TextWrapper>
       <RecWrapper>
         <RecContent src={SaleProduct} onClick={onClickProduct} />
-        <RecContent />
-        <RecContent />
+        <RecContent src={Macaron} />
+        <RecContent src={Donuts} />
       </RecWrapper>
       <TextWrapper>일일 특가 상품</TextWrapper>
     </BodyContent>
