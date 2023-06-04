@@ -12,6 +12,7 @@ import ManagerPage from "./component/Page/ManagerPage";
 import UserManage from "./component/Page/UserManage";
 import ProductManage from "./component/Page/ProductManage";
 import PostManage from "./component/Page/PostManage";
+import NoneHeartPage from "./component/Page/NoneHeartPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="LogInPage" element={<LogInPage />} />
         <Route path="SignUpPage" element={<SignUpPage />} />
         <Route path="SearchPage" element={<SearchPage />} />
+        <Route path="NoneHeartPage" element={<NoneHeartPage />} />
         <Route path="HeartPage" element={<HeartPage />} />
         <Route path="ProductDetailPage" element={<ProductDetailPage />} />
         <Route path="PostPage" element={<PostPage />} />
