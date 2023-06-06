@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
-import ProductImg from "../../assets/Product.png";
+import ProductImg from "../../assets/LikedIMG.png";
 import { AiFillHeart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
@@ -125,14 +125,14 @@ const KnottedDetailPage = () => {
         <TextWrapper>Detail</TextWrapper>
         <ProductWrapper src={ProductImg} />
         <ProductNameText>
-          [청수당] 수플레 팬케이크 2 Set
+          [Knotted] 우유 생크림 도넛
           <ReviewBut onClick={onClickReview}>Review</ReviewBut>
         </ProductNameText>
-        <ProductPriceText>8,400 원</ProductPriceText>
+        <ProductPriceText>3,900 원</ProductPriceText>
         <ProductDetailText>
-          익선동, 연남동을 점령한 21세기 최고의 수제 팬케이크!
+          폭신폭신한 크림 가득 🤍🫶🏻 멈출 수 없는 노티드 크림 도넛!
           <br />
-          청수당 쉐프가 구운 팬케이크! 이제는 가정에서도 만나보세요~
+          WELCOME TO KNOTTED WORLD~🫶🏻
         </ProductDetailText>
         <Wrapper>
           <DivWrap onClick={handleHeart}>
