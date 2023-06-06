@@ -118,6 +118,7 @@ const KnottedDetailPage = () => {
   const onClickReview = () => {
     navigate("/PostPage");
   };
+
   return (
     <>
       <Header />
