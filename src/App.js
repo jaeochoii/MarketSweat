@@ -7,6 +7,7 @@ import HeartPage from "./component/Page/HeartPage";
 import MyPage from "./component/Page/MyPage";
 import MenuPage from "./component/Page/MenuPage";
 import ProductDetailPage from "./component/Page/ProductDetailPage";
+import KnottedDetailPage from "./component/Page/KnottedDetailPage";
 import PostPage from "./component/Page/PostPage";
 import ManagerPage from "./component/Page/ManagerPage";
 import UserManage from "./component/Page/UserManage";
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="NoneHeartPage" element={<NoneHeartPage />} />
         <Route path="HeartPage" element={<HeartPage />} />
         <Route path="ProductDetailPage" element={<ProductDetailPage />} />
+        <Route path="KnottedDetailPage" element={<KnottedDetailPage />} />
         <Route path="PostPage" element={<PostPage />} />
         <Route path="ManagerPage" element={<ManagerPage />} />
         <Route path="UserManage" element={<UserManage />} />
