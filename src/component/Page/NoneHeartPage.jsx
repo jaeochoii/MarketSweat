@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Error from "../../assets/UnHeart.png";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
 
@@ -19,13 +20,22 @@ const TextWrapper = styled.div`
   padding-top: 30px;
 `;
 
-const Text = styled.div`
+const ErrorWrapper = styled.img`
+  display: flex;
+  width: 120px;
+  height: 120px;
+  border-radius: 3px;
+  padding-left: 130px;
+  padding-top: 50px;
+`;
+
+const ErrorText = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Mogra&display=swap");
   font-family: "Mogra", cursive;
-  font-weight: 700;
-  font-size: 15px;
-  padding-top: 20px;
-  padding-left: 17px;
+  font-weight: 400;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-left: 85px;
 `;
 
 const NoneHeartPage = () => {
@@ -34,9 +44,10 @@ const NoneHeartPage = () => {
       <Header />
       <BodyContent>
         <TextWrapper>Liked</TextWrapper>
-        <Text>내가 찜한 상품</Text>
+        <ErrorWrapper src={Error} />
+        <ErrorText>내가 찜한 상품이 없습니다</ErrorText>
       </BodyContent>
-      <Footer />
+      <Footer name="heart" />
     </>
   );
 };

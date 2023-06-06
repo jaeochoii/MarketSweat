@@ -50,7 +50,7 @@ const Footer = (props) => {
         name="heart"
         onClick={() => {
           setClick(props.name);
-          navigate("/HeartPage");
+          navigate("/NoneHeartPage");
         }}
       >
         {click === "heart" ? (
