@@ -51,6 +51,10 @@ const Body = () => {
     navigate("/ProductDetailPage");
   };
 
+  const onClickKnotted = () => {
+    navigate("/KnottedDetailPage");
+  };
+
   return (
     <BodyContent>
       <TextWrapper>스윗 행사 상품</TextWrapper>
@@ -59,7 +63,7 @@ const Body = () => {
       <RecWrapper>
         <RecContent src={Pancake} onClick={onClickProduct} />
         <RecContent src={Macaron} />
-        <RecContent src={Donuts} />
+        <RecContent src={Donuts} onClick={onClickKnotted} />
       </RecWrapper>
       <TextWrapper>일일 특가 상품</TextWrapper>
     </BodyContent>
