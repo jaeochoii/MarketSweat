@@ -68,6 +68,10 @@ const MyPage = () => {
     navigate("/ManagerPage");
   };
 
+  const onCLickPurchase = () => {
+    navigate("/PurchasePage");
+  };
+
   return (
     <>
       <Header />
@@ -78,7 +82,7 @@ const MyPage = () => {
           <span style={{ fontWeight: 700 }}>최재오</span>&nbsp;님
         </UserText>
         <UserText>안녕하세요?</UserText>
-        <EnterBut>구매 내역</EnterBut>
+        <EnterBut onClick={onCLickPurchase}>구매 내역</EnterBut>
         <EnterBut onClick={onClickHeart}>찜한 상품</EnterBut>
         <EnterBut>후기 작성</EnterBut>
         <EnterBut onClick={onClickManage}>관리자 페이지</EnterBut>

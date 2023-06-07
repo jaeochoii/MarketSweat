@@ -14,6 +14,7 @@ import UserManage from "./component/Page/UserManage";
 import ProductManage from "./component/Page/ProductManage";
 import PostManage from "./component/Page/PostManage";
 import NoneHeartPage from "./component/Page/NoneHeartPage";
+import PurchasePage from "./component/Page/PurchasePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="UserManage" element={<UserManage />} />
         <Route path="ProductManage" element={<ProductManage />} />
         <Route path="PostManage" element={<PostManage />} />
+        <Route path="PurchasePage" element={<PurchasePage />} />
       </Routes>
     </BrowserRouter>
   );
