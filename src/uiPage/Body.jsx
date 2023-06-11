@@ -16,14 +16,14 @@ const TextWrapper = styled.div`
   font-family: "Mogra", cursive;
   font-weight: 700;
   font-size: 15px;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-left: 18px;
   padding-bottom: 5px;
 `;
 
 const SaleWrapper = styled.img`
   width: 358px;
-  height: 215px;
+  height: 230px;
   padding-left: 18px;
 `;
 
@@ -65,7 +65,6 @@ const Body = () => {
         <RecContent src={Macaron} />
         <RecContent src={Donuts} onClick={onClickKnotted} />
       </RecWrapper>
-      <TextWrapper>일일 특가 상품</TextWrapper>
     </BodyContent>
   );
 };
