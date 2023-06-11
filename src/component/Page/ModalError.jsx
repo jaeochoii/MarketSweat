@@ -1,4 +1,4 @@
-function Modal({ isOpen, closeModal }) {
+function ModalError({ isOpen, closeModal }) {
   return (
     <div
       style={{
@@ -45,11 +45,11 @@ function Modal({ isOpen, closeModal }) {
             paddingTop: "20px",
           }}
         >
-          구매가 완료되었습니다
+          로그인 후 이용해주세요
         </div>
       </div>
     </div>
   );
 }
 
-export default Modal;
+export default ModalError;

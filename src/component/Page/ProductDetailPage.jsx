@@ -3,10 +3,10 @@ import styled from "styled-components";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
 import ProductImg from "../../assets/Product.png";
-import { AiFillHeart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import ModalError from "./ModalError";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -109,11 +109,10 @@ const ReviewBut = styled.button`
 
 const ProductDetailPage = () => {
   const navigate = useNavigate();
-  const [heart, setHeart] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleHeart = () => {
-    setHeart(!heart);
-  };
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const onClickReview = () => {
     navigate("/PostPage");
@@ -136,13 +135,13 @@ const ProductDetailPage = () => {
           청수당 쉐프가 구운 팬케이크! 이제는 가정에서도 만나보세요~
         </ProductDetailText>
         <Wrapper>
-          <DivWrap onClick={handleHeart}>
-            {heart ? (
-              <AiFillHeart style={{ color: "red", fontSize: "30px" }} />
-            ) : (
-              <AiOutlineHeart style={{ color: "red", fontSize: "30px" }} />
-            )}
+          <DivWrap>
+            <AiOutlineHeart
+              style={{ color: "red", fontSize: "30px" }}
+              onClick={openModal}
+            />
           </DivWrap>
+          <ModalError isOpen={isModalOpen} closeModal={closeModal} />
           <PurchaseBut>구매하기</PurchaseBut>
         </Wrapper>
       </BodyContent>
