@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
+import { useNavigate } from "react-router-dom";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -54,6 +55,11 @@ const PurchaseBut = styled.button`
 `;
 
 const WritePostPage = () => {
+  const navigate = useNavigate();
+
+  const onClickSubmit = () => {
+    navigate("/KnottedPostPage");
+  };
   return (
     <>
       <Header />
@@ -62,7 +68,7 @@ const WritePostPage = () => {
         <SearchBox placeholder="제목을 작성해주세요" />
         <TitleText>내 용</TitleText>
         <SearchBox2 placeholder="내용을 작성해주세요" />
-        <PurchaseBut>등록하기</PurchaseBut>
+        <PurchaseBut onClick={onClickSubmit}>등록하기</PurchaseBut>
       </BodyContent>
       <Footer />
     </>
