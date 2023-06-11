@@ -65,12 +65,17 @@ const UserManage = () => {
             <IdText>상태</IdText>
           </UserText>
           <UserText>
-            <IdText2>inha2023</IdText2>
+            <IdText2>jaeochoiii</IdText2>
             <IdText2>최재오</IdText2>
-            <IdText2>internet23!</IdText2>
+            <IdText2>12345678!</IdText2>
             <IdText2>관리자</IdText2>
           </UserText>
-          <UserText></UserText>
+          <UserText>
+            <IdText2>inha2023</IdText2>
+            <IdText2>김인하</IdText2>
+            <IdText2>internet23!</IdText2>
+            <IdText2>사용자</IdText2>
+          </UserText>
           <UserText></UserText>
         </UserState>
       </BodyContent>

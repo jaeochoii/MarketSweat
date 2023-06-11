@@ -19,6 +19,7 @@ import MakePostPage from "./component/Page/MakePostPage";
 import SearchEnterPage from "./component/Page/SearchEnterPage";
 import WritePostPage from "./component/Page/WritePostPage";
 import KnottedPostPage from "./component/Page/KnottedPostPage";
+import KnottedDelete from "./component/Page/KnottedDelete";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="SearchEnterPage" element={<SearchEnterPage />} />
         <Route path="WritePostPage" element={<WritePostPage />} />
         <Route path="KnottedPostPage" element={<KnottedPostPage />} />
+        <Route path="KnottedDelete" element={<KnottedDelete />} />
       </Routes>
     </BrowserRouter>
   );

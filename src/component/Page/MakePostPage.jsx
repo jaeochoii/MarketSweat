@@ -43,7 +43,7 @@ const MakePostPage = () => {
     <>
       <Header />
       <BodyContent>
-        <TextWrapper>Liked</TextWrapper>
+        <TextWrapper>Review</TextWrapper>
         <ErrorWrapper src={NoList} />
         <ErrorText>아직 작성된 리뷰가 없습니다</ErrorText>
       </BodyContent>

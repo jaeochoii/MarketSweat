@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
+import { useNavigate } from "react-router-dom";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -52,6 +53,11 @@ const IdText2 = styled.div`
 `;
 
 const PostManage = () => {
+  const navigate = useNavigate();
+
+  const onClickPost = () => {
+    navigate("/KnottedDelete");
+  };
   return (
     <>
       <Header />
@@ -66,12 +72,28 @@ const PostManage = () => {
           </UserText>
           <UserText>
             <IdText2>00000001</IdText2>
-            <IdText2>&nbsp;너무 맛...</IdText2>
-            <IdText2>&nbsp;&nbsp;최재오</IdText2>
+            <IdText2>&nbsp;아이가 ...</IdText2>
+            <IdText2>&nbsp;&nbsp;김인하</IdText2>
+            <IdText2>23.06.10</IdText2>
+          </UserText>
+          <UserText>
+            <IdText2>00000002</IdText2>
+            <IdText2>&nbsp;배송이 ...</IdText2>
+            <IdText2>&nbsp;&nbsp;김인하</IdText2>
+            <IdText2>23.06.10</IdText2>
+          </UserText>
+          <UserText>
+            <IdText2>00000003</IdText2>
+            <IdText2>&nbsp;맛있게 ...</IdText2>
+            <IdText2>&nbsp;&nbsp;김인하</IdText2>
+            <IdText2>23.06.10</IdText2>
+          </UserText>
+          <UserText>
+            <IdText2 onClick={onClickPost}>00000004</IdText2>
+            <IdText2 onClick={onClickPost}>&nbsp;맛있게...</IdText2>
+            <IdText2 onClick={onClickPost}>&nbsp;&nbsp;최재오</IdText2>
             <IdText2>23.06.11</IdText2>
           </UserText>
-          <UserText></UserText>
-          <UserText></UserText>
         </UserState>
       </BodyContent>
       <Footer />

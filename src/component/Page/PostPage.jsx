@@ -91,7 +91,7 @@ const PostPage = () => {
     <>
       <Header />
       <BodyContent>
-        <TextWrapper>Post</TextWrapper>
+        <TextWrapper>Review</TextWrapper>
         <ReviewWrapper>
           <ProductText>[청수당] 수플레 팬케이크 2set</ProductText>
           <ContentText>맛있게 잘먹었습니다.</ContentText>

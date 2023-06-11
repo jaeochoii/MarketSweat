@@ -66,8 +66,8 @@ const ProductManage = () => {
           </UserText>
           <UserText>
             <IdText2>00000000</IdText2>
-            <IdText2>[청수당]...</IdText2>
-            <IdText2>8400원</IdText2>
+            <IdText2>[Knott]...</IdText2>
+            <IdText2>3900원</IdText2>
             <IdText2>001개</IdText2>
           </UserText>
           <UserText></UserText>
