@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
+import { useNavigate } from "react-router-dom";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -56,12 +57,26 @@ const PopularBox = styled.div`
 `;
 
 const SearchPage = () => {
+  const navigate = useNavigate();
+
+  const handleOnClick = () => {
+    navigate("/SearchEnterPage");
+  };
+
+  const handleOnKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleOnClick();
+    }
+  };
   return (
     <>
       <Header />
       <BodyContent>
         <TextWrapper>Search</TextWrapper>
-        <SearchBox placeholder="검색어를 입력해주세요" />
+        <SearchBox
+          placeholder="검색어를 입력해주세요"
+          onKeyDown={handleOnKeyPress}
+        />
         <Text>인기검색어</Text>
         <PopularBox>1. 런던 베이글 뮤지엄</PopularBox>
         <PopularBox>2. 너티드 도넛</PopularBox>
