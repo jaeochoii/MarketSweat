@@ -7,6 +7,7 @@ import { AiFillHeart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Modal from "./Modal";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -110,6 +111,10 @@ const ReviewBut = styled.button`
 const KnottedDetailPage = () => {
   const navigate = useNavigate();
   const [heart, setHeart] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const handleHeart = () => {
     setHeart(!heart);
@@ -143,7 +148,8 @@ const KnottedDetailPage = () => {
               <AiOutlineHeart style={{ color: "red", fontSize: "30px" }} />
             )}
           </DivWrap>
-          <PurchaseBut>구매하기</PurchaseBut>
+          <PurchaseBut onClick={openModal}>구매하기</PurchaseBut>
+          <Modal isOpen={isModalOpen} closeModal={closeModal} />
         </Wrapper>
       </BodyContent>
       <Footer />
