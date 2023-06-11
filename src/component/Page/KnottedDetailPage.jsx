@@ -116,7 +116,7 @@ const KnottedDetailPage = () => {
   };
 
   const onClickReview = () => {
-    navigate("/PostPage");
+    navigate("/MakePostPage");
   };
 
   return (

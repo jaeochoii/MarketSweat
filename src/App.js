@@ -15,6 +15,7 @@ import ProductManage from "./component/Page/ProductManage";
 import PostManage from "./component/Page/PostManage";
 import NoneHeartPage from "./component/Page/NoneHeartPage";
 import PurchasePage from "./component/Page/PurchasePage";
+import MakePostPage from "./component/Page/MakePostPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="ProductManage" element={<ProductManage />} />
         <Route path="PostManage" element={<PostManage />} />
         <Route path="PurchasePage" element={<PurchasePage />} />
+        <Route path="MakePostPage" element={<MakePostPage />} />
       </Routes>
     </BrowserRouter>
   );
