@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../../uiPage/Header";
 import Footer from "../../uiPage/Footer";
 import Pancake from "../../assets/Product.png";
+import { useNavigate } from "react-router-dom";
 
 const BodyContent = styled.div`
   width: 390px;
@@ -88,6 +89,12 @@ const PurchaseBut = styled.button`
 `;
 
 const PurchasePage = () => {
+  const navigate = useNavigate();
+
+  const onClickPosting = () => {
+    navigate("/WritePostPage");
+  };
+
   return (
     <>
       <Header />
@@ -110,7 +117,7 @@ const PurchasePage = () => {
             8,400원
           </RecText>
         </PurchaseDiv>
-        <PurchaseBut>후기 작성</PurchaseBut>
+        <PurchaseBut onClick={onClickPosting}>후기 작성</PurchaseBut>
       </BodyContent>
       <Footer />
     </>
